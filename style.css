@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+header{
+    background-image: url("assets/header_back.png");
+    background-position: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 181px;
+
+}
+
+.logo{
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); 
+}
+
+.ham{
+    cursor: pointer;
+}
+
+.sound{
+    position: absolute;
+    top: 10px;
+    left: 165px; 
+    cursor: pointer;
+}
+/*ポップアウト*/
+.open {
+	cursor:pointer; 
+}
+
+.pop_tytle{
+	position: absolute;
+	top: 60px;
+}
+/* explain*/
+.explain{
+    position: absolute;
+    top: -6px;
+    right: 290px; 
+    cursor: pointer;
+}
+
+#pop_up_explain {
+	display: none; 
+}
+
+.overlay_explain {
+	display: none; 
+}
+
+#pop_up_explain:checked + .overlay_explain {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.window_explain {
+	width: 930px;
+	height: 450px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+	/*ネオンサイン*/
+	--blur: 1.75rem;
+	--box-blur: calc(0.5 * var(--blur));
+	--glow: var(--color);
+	--size: 12rem;
+	border: 4px solid currentColor;
+	box-shadow: 
+	  /* --- "glass" tube --- */
+	  /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* --- glow --- */
+	  /* inside */ inset 0 0 var(--box-blur) var(--glow),
+	  /* outside */      0 0 var(--box-blur) var(--glow);
+	  border-color: var(--color, white);
+	  --color:  #00FFFF; filter: saturate(175%); 
+}
+
+/*warning*/
+.warning{
+    position: absolute;
+    top: 5px;
+    right: 160px;
+    cursor: pointer;
+}
+
+.open_warning {
+	cursor:pointer; 
+}
+
+#pop_up_warning {
+	display: none; 
+}
+
+.overlay_warning {
+	display: none; 
+}
+
+#pop_up_warning:checked + .overlay_warning {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.window_warning {
+	width: 930px;
+	height: 470px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+	/*ネオンサイン*/
+	--blur: 1.75rem;
+	--box-blur: calc(0.5 * var(--blur));
+	--glow: var(--color);
+	--size: 12rem;
+	border: 4px solid currentColor;
+	box-shadow: 
+	  /* --- "glass" tube --- */
+	  /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* --- glow FFFF00FFFF00
+	  /* inside */ inset 0 0 var(--box-blur) var(--glow),
+	  /* outside */      0 0 var(--box-blur) var(--glow);
+	  border-color: var(--color, white);
+	--color:  #FFFF00; filter: brightness(90%); 
+}
+
+.window_warning img{
+	width:25px;
+	height:25px; 
+	vertical-align: middle; 
+}
+
+/*evaluation*/
+.evaluation{
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    cursor: pointer;
+}
+
+.open_evaluation {
+	cursor:pointer; 
+}
+
+#pop_up_evaluation {
+	display: none; 
+}
+
+.overlay_evaluation {
+	display: none; 
+}
+
+#pop_up_evaluation:checked + .overlay_evaluation {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.window_evaluation {
+	width: 930px;
+	height: 470px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+	/*ネオンサイン*/
+	--blur: 1.75rem;
+	--box-blur: calc(0.5 * var(--blur));
+	--glow: var(--color);
+	--size: 12rem;
+	border: 4px solid currentColor;
+	box-shadow: 
+	  /* --- "glass" tube --- */
+	  /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
+	  /* --- glow FFFF00FFFF00
+	  /* inside */ inset 0 0 var(--box-blur) var(--glow),
+	  /* outside */      0 0 var(--box-blur) var(--glow);
+	  border-color: var(--color, white);
+	  --color:  #00FF00; filter: brightness(90%); 	
+
+}
+
+body{
+    background-image: url("assets/main_back.png");
+	background-repeat:repeat-y;
+	background-size: contain;
+	margin: 0;
+	height: 1000px;
+}
+
+footer {
+    height: 153px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
