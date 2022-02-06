@@ -8,11 +8,6 @@ header{
     top: 0;
     width: 100%; 
     height: 181px;
-	@font-face {
-		font-family:'Maru-Gothic';
-		src: url('assets/Honoka-Shin-Maru-Gothic_R.otf') format('opentype');
-		}
-	font-family:'Maru-Gothic';
 }
 
 .logo{
@@ -253,5 +248,11 @@ footer {
     background-color: black;
     color: white;
 }
-
+@font-face {
+	font-family:'Maru-Gothic';
+	src: url('assets/Honoka-Shin-Maru-Gothic_R.otf') format('opentype');
+	}
+h1{
+	font-family:'Maru-Gothic';
+}
 
