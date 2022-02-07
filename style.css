@@ -1,13 +1,34 @@
 @charset "UTF-8";
 
 header{
-    background-image: url("assets/header_back.png");
+ 
+	font-family: 'M PLUS Rounded 1c', sans-serif;
     background-position: center;
+	display: block;
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     width: 100%; 
     height: 181px;
+}
+
+header .back{
+	width: 100%;
+	height: 100%;
+}
+
+header p{
+	font-size: 20px;
+}
+
+header h1{
+	font-size: 50px;
+}
+
+header .logo img{
+	width: 100%;
+	height: 100%;
+
 }
 
 .logo{
@@ -17,16 +38,21 @@ header{
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%); 
+	height: 100%;
+	width: 25%;
 }
 
 .ham{
-    cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
 }
 
 .sound{
     position: absolute;
     top: 10px;
-    left: 165px; 
+    left: 12%; 
     cursor: pointer;
 }
 /*ポップアウト*/
@@ -36,13 +62,13 @@ header{
 
 .pop_tytle{
 	position: absolute;
-	top: 60px;
+	top: 3%;
 }
 /* explain*/
 .explain{
     position: absolute;
     top: -6px;
-    right: 290px; 
+    right: 18%; 
     cursor: pointer;
 }
 
@@ -66,12 +92,11 @@ header{
 }
 
 .window_explain {
+
 	width: 930px;
 	height: 450px;
 	background-color: black;
 	color: white;
-
-	font-size: 20px;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
@@ -102,7 +127,7 @@ header{
 .warning{
     position: absolute;
     top: 5px;
-    right: 160px;
+    right: 10%;
     cursor: pointer;
 }
 
@@ -134,7 +159,6 @@ header{
 	height: 470px;
 	background-color: black;
 	color: white;
-	font-size: 20px;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
@@ -203,7 +227,6 @@ header{
 	height: 470px;
 	background-color: black;
 	color: white;
-	font-size: 20px;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
@@ -229,6 +252,7 @@ header{
 	  border-color: var(--color, white);
 	  --color:  #00FF00; filter: brightness(90%); 	
 
+
 }
 
 body{
@@ -236,11 +260,14 @@ body{
 	background-repeat:repeat-y;
 	background-size: contain;
 	margin: 0;
+	
 	height: 1000px;
+
 }
 
 footer {
     height: 153px; 
+	width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -248,11 +275,6 @@ footer {
     background-color: black;
     color: white;
 }
-@font-face {
-	font-family:'Maru-Gothic';
-	src: url('assets/Honoka-Shin-Maru-Gothic_R.otf') format('opentype');
-	}
-h1{
-	font-family:'Maru-Gothic';
-}
+
+
 
