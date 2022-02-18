@@ -12,7 +12,7 @@ header{
 /*ヘッダーの背景画像*/
 header .back{
 	width: 100%;
-	height: 110%;
+	height: 100%;
 }
 /*ポップアップの文字サイズ*/
 header h1{
@@ -43,6 +43,7 @@ header p{
 	width: auto;
 }
 /*sound*/
+/*BGMミュート*/
 .sound{
     position: absolute;
     top: -1%;
@@ -51,7 +52,7 @@ header p{
 	height: 60%;
 	width: auto;
 }
-/*ポップアウト*/
+/*ポップアップ*/
 .open {
 	cursor:pointer; 
 }
@@ -60,7 +61,7 @@ header p{
 	position: absolute;
 	top: 3%;
 }
-/* explain*/
+/* 説明*/
 .explain{
     position: absolute;
     top: -5%;
@@ -88,10 +89,9 @@ header p{
 	top: 0;
 	left: 0;
 }
-
 .window_explain {
 	width: 930px;
-	height: 450px;
+	height: 470px;
 	background-color: black;
 	color: white;
 	border-radius: 20px;
@@ -119,7 +119,8 @@ header p{
 	  border-color: var(--color, white);
 	  --color:  #00FFFF; filter: saturate(175%); 
 }
-/*warning*/
+
+/*注意事項*/
 .warning{
     position: absolute;
     top: -2%;
@@ -189,7 +190,7 @@ header p{
 	vertical-align: middle; 
 }
 
-/*evaluation*/
+/*アンケート*/
 .evaluation{
     position: absolute;
     top: 0px;
@@ -256,9 +257,9 @@ header p{
 body{
     background-image: url("assets/main_back.png");
 	background-repeat:repeat-y;
-	background-size: contain;
+	background-size: 100% auto;
 	margin: 0;
-	
+
 	height: 1000px;
 
 }
