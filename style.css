@@ -15,12 +15,12 @@ header .back{
 	height: 100%;
 }
 /*ポップアップの文字サイズ*/
-header h1{
+header h2{
 	font-size: 50px;
 }
 
 header p{
-	font-size: 20px;
+	font-size: 22px;
 }
 /*ロゴ*/
 .logo {
@@ -39,17 +39,16 @@ header p{
 	top: 0px;
 	left: 0px;
 	cursor: pointer;
-	height: 60%;
+	height: 55%;
 	width: auto;
 }
-/*sound*/
 /*BGMミュート*/
 .sound{
     position: absolute;
-    top: -1%;
+    top: 5%;
     left: 9%; 
     cursor: pointer;
-	height: 60%;
+	height: 45%;
 	width: auto;
 }
 /*ポップアップ*/
@@ -59,15 +58,15 @@ header p{
 
 .pop_tytle{
 	position: absolute;
-	top: 3%;
+	top: 2%;
 }
 /* 説明*/
 .explain{
     position: absolute;
-    top: -5%;
-    right: 18%; 
+    top: 0%;
+    right: 14%; 
     cursor: pointer;
-	height: 70%;
+	height: 63%;
 	width: auto;
 }
 
@@ -123,10 +122,10 @@ header p{
 /*注意事項*/
 .warning{
     position: absolute;
-    top: -2%;
-    right: 9%;
+    top: 2%;
+    right: 7%;
     cursor: pointer;
-	height: 60%;
+	height: 55%;
 	width: auto;
 }
 
@@ -193,8 +192,8 @@ header p{
 /*アンケート*/
 .evaluation{
     position: absolute;
-    top: 0px;
-    right: 0px; 
+    top: 0%;
+    right: 0%; 
     cursor: pointer;
 	height:60%;
 	width: auto;
