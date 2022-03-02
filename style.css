@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-header{
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+header {
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     background-position: center;
 	position: fixed;
 	display: block;
@@ -10,16 +11,21 @@ header{
     height: auto;
 }
 /*ヘッダーの背景画像*/
-header .back{
+header .back {
 	width: 100%;
 	height: 100%;
 }
+
+header .hover:hover {
+	opacity: 0.7;
+	transition-duration: 0.3s;
+}
 /*ポップアップの文字サイズ*/
-header h2{
+header h2 {
 	font-size: 50px;
 }
 
-header p{
+header p {
 	font-size: 22px;
 }
 /*ロゴ*/
@@ -30,25 +36,25 @@ header p{
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-	height: 100%;
+	height: 10vw;
 	width: auto; 
 }
 /*ハンバーガーメニュー*/
-.ham{
+.ham {
 	position: absolute;
-	top: 1px;
+	top: 3%;
 	left: 0px;
 	cursor: pointer;
-	height: 55%;
+	height: 5vw;
 	width: auto;
 }
 /*BGMミュート*/
-.sound{
+.sound {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 9%; 
     cursor: pointer;
-	height: 45%;
+	height: 5vw;
 	width: auto;
 }
 /*ポップアップ*/
@@ -56,17 +62,17 @@ header p{
 	cursor:pointer; 
 }
 
-.pop_tytle{
+.pop_tytle {
 	position: absolute;
 	top: 2%;
 }
 /* 説明*/
-.explain{
+.explain {
     position: absolute;
     top: -1%;
     right: 13%; 
     cursor: pointer;
-	height: 63%;
+	height: 6vw;
 	width: auto;
 }
 
@@ -120,12 +126,12 @@ header p{
 }
 
 /*注意事項*/
-.warning{
+.warning {
     position: absolute;
-    top: 2%;
+    top: 3%;
     right: 7%;
     cursor: pointer;
-	height: 55%;
+	height: 5vw;
 	width: auto;
 }
 
@@ -179,23 +185,23 @@ header p{
 	  /* --- glow FFFF00FFFF00
 	  /* inside */ inset 0 0 var(--box-blur) var(--glow),
 	  /* outside */      0 0 var(--box-blur) var(--glow);
-	  border-color: var(--color, white);
+	border-color: var(--color, white);
 	--color:  #FFFF00; filter: brightness(90%); 
 }
 
-.window_warning img{
+.window_warning img {
 	width:25px;
 	height:25px; 
 	vertical-align: middle; 
 }
 
 /*アンケート*/
-.evaluation{
+.evaluation {
     position: absolute;
-    top: 0%;
+    top: -1%;
     right: 0%; 
     cursor: pointer;
-	height:60%;
+	height: 6vw;
 	width: auto;
 }
 
@@ -253,7 +259,7 @@ header p{
 	  --color:  #00FF00; filter: brightness(90%); 	
 }
 /*ここまでヘッダー*/
-body{
+body {
     background-image: url("assets/main_back.png");
 	background-repeat:repeat-y;
 	background-size: 100% auto;
