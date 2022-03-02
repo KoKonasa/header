@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 header {
-
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background-position: center;
 	position: fixed;
@@ -15,7 +13,6 @@ header .back {
 	width: 100%;
 	height: 100%;
 }
-
 header .hover:hover {
 	opacity: 0.7;
 	transition-duration: 0.3s;
@@ -24,12 +21,11 @@ header .hover:hover {
 header h2 {
 	font-size: 50px;
 }
-
 header p {
 	font-size: 22px;
 }
 /*ロゴ*/
-.logo {
+.logo_img {
     position: absolute;
     top: -3%;
     left: 50%;
@@ -40,7 +36,7 @@ header p {
 	width: auto; 
 }
 /*ハンバーガーメニュー*/
-.ham {
+.ham_img {
 	position: absolute;
 	top: 3%;
 	left: 0px;
@@ -49,7 +45,7 @@ header p {
 	width: auto;
 }
 /*BGMミュート*/
-.sound {
+.sound_img {
     position: absolute;
     top: 3%;
     left: 9%; 
@@ -61,13 +57,12 @@ header p {
 .open {
 	cursor:pointer; 
 }
-
 .pop_tytle {
 	position: absolute;
 	top: 2%;
 }
 /* 説明*/
-.explain {
+.explain_img {
     position: absolute;
     top: -1%;
     right: 13%; 
@@ -75,15 +70,12 @@ header p {
 	height: 6vw;
 	width: auto;
 }
-
 #pop_up_explain {
 	display: none; 
 }
-
 .overlay_explain {
 	display: none; 
 }
-
 #pop_up_explain:checked + .overlay_explain {
 	display: block;
 	z-index: 9999;
@@ -124,9 +116,8 @@ header p {
 	  border-color: var(--color, white);
 	  --color:  #00FFFF; filter: saturate(175%); 
 }
-
 /*注意事項*/
-.warning {
+.warning_img {
     position: absolute;
     top: 3%;
     right: 7%;
@@ -134,19 +125,15 @@ header p {
 	height: 5vw;
 	width: auto;
 }
-
 .open_warning {
 	cursor:pointer; 
 }
-
 #pop_up_warning {
 	display: none; 
 }
-
 .overlay_warning {
 	display: none; 
 }
-
 #pop_up_warning:checked + .overlay_warning {
 	display: block;
 	z-index: 9999;
@@ -157,7 +144,6 @@ header p {
 	top: 0;
 	left: 0;
 }
-
 .window_warning {
 	width: 930px;
 	height: 470px;
@@ -188,15 +174,13 @@ header p {
 	border-color: var(--color, white);
 	--color:  #FFFF00; filter: brightness(90%); 
 }
-
 .window_warning img {
 	width:25px;
 	height:25px; 
 	vertical-align: middle; 
 }
-
 /*アンケート*/
-.evaluation {
+.evaluation_img {
     position: absolute;
     top: -1%;
     right: 0%; 
@@ -204,19 +188,15 @@ header p {
 	height: 6vw;
 	width: auto;
 }
-
 .open_evaluation {
 	cursor:pointer; 
 }
-
 #pop_up_evaluation {
 	display: none; 
 }
-
 .overlay_evaluation {
 	display: none; 
 }
-
 #pop_up_evaluation:checked + .overlay_evaluation {
 	display: block;
 	z-index: 9999;
@@ -227,7 +207,6 @@ header p {
 	top: 0;
 	left: 0;
 }
-
 .window_evaluation {
 	width: 930px;
 	height: 470px;
@@ -268,7 +247,6 @@ body {
 	height: 1000px;
 
 }
-
 footer {
     height: 153px; 
 	width: 100%;
