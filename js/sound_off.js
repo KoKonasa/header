@@ -1,4 +1,4 @@
-const sound_button = document.querySelector('.sound');
+const sound_button = document.querySelector('.sound_img');
 const bgm = document.querySelector(".bgm");  
 
 sound_button.onclick = function(){
