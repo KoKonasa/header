@@ -2,7 +2,9 @@
 <html>
 
   <head>
+    
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=600">
     <title>RVW</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +14,9 @@
 
   <body>
       <header class="header">
-        <img src="assets/header_back_trem.png"  class="back">
-
+        <img class="pc back" src="assets/header_back_trem_pc.png" alt="パソコン用の画像">
+        <img class="sp back" src="assets/header_back_trem_sp.png" alt="スマートフォン用の画像">
+        
         <nav class="navigation">
           <div class=""logo>
             <a href=#><img src="assets/header_logo.png" alt="RVW" class="logo_img hover" ></a>
@@ -22,6 +25,7 @@
           <div class="ham">
             <img class="ham_img hover" src="assets/header_ham.png" alt="list">
           </div>
+
           <div class="sound">
             <img class="sound_img hover" src="assets/header_sound_off.png" alt="sound_off">
             <audio class="bgm" preload="metadata" loop>
@@ -36,14 +40,14 @@
             <input type="checkbox" id="pop_up_explain">
             <div class="overlay_explain">
               <label for="pop_up_explain">
-                <div class="window_explain">
+                <div class="window_explain window">
                   <h2 class="pop_tytle">RVWについて</h2>
                   <p>大阪府立大学の部活、コンピュータハウスランダムによるWeb展示企画です。<br>
                   今年度は新型コロナウイルスの影響によって、大学祭のオフライン開催が中止になり、<br> 
-                  部員の創作物の展示の機会が消失したため、Web上で展示する運びとなりました。<br><br>
+                  部員の創作物の展示の機会が消失したため、Web上で展示する運びとなりました。<br>
                   全ての作品をフリーでダウンロードでき、<br>
                   一部のゲーム作品はオンライン上でプレイすることができます。</p>
-	              </div>                   
+                </div>                   
               </label>
             </div>
           </div>
@@ -55,11 +59,10 @@
             <input type="checkbox" id="pop_up_warning">
             <div class="overlay_warning">
               <label for="pop_up_warning">
-                <div class="window_warning">        
+                <div class="window_warning window">        
                   <h2 class="pop_tytle">注意事項</h2>
-		              <p>当WebサイトはBGMが流れます。ミュートにしたい場合は、<br>
-                  <img src="assets/header_sound.png" alt="sound_off">をクリックしてください。</p>
-	              </div>
+                  <p>当WebサイトはBGMが流れます。ミュートにしたい場合は、<img src="assets/header_sound.png" alt="sound_off">をクリックしてください。</p>
+                </div>
               </label> 
             </div>
           </div>
@@ -71,11 +74,11 @@
             <input type="checkbox" id="pop_up_evaluation">
             <div class="overlay_evaluation">
               <label for="pop_up_evaluation">            
-            	  <div class="window_evaluation">
+                <div class="window_evaluation window">
                   <h2 class="pop_tytle">アンケートのお願い</h2>
-		              <p>作品に関するアンケートにご協力お願いします。<br>
+                  <p>作品に関するアンケートにご協力お願いします。<br>
                   <a style="color:white"href="">アンケート</a></p>
-	              </div>
+                </div>
               </label>
             </div>   
           </div>         
@@ -108,7 +111,7 @@
       <h1>aaaaaaa</h1>
       <h2>bbbbbbb</h2>
     <footer>
-        <small>Copyright &copy; 2021 Computer House Random</small>
+      <small>Copyright &copy; 2021 Computer House Random</small>
     </footer>
     <script type="text/javascript" src="js/sound_off.js"></script>
   </body>
