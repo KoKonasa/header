@@ -19,9 +19,17 @@ header .back {
 .sp { 
 	display: none !important; 
 }
-header .hover:hover {
-	opacity: 0.7;
-	transition-duration: 0.3s;
+@media (hover: hover) {
+	header .hover:hover {
+		opacity: 0.7;
+		transition-duration: 0.3s;
+	}
+}
+@media (hover: none) {
+	header .hover:active {
+		opacity: 0.7;
+		transition-duration: 0.3s;
+	}
 }
 /*ポップアップの文字サイズ*/
 header h2 {
